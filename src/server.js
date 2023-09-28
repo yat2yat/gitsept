@@ -8,7 +8,7 @@ const SongsService = require(SongsServicePath);
 const AlbumsService = require('./services/postgres/AlbumsService');
 const SongsValidator = require('./validator/songs');
 const AlbumsValidator = require('./validator/albums');
-const ClientError = require('../exceptions/ClientError');
+const ClientError = require('./ClientError');
 
 const init = async () => {
   const songsService = new SongsService();

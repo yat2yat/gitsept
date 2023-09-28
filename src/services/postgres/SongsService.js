@@ -1,6 +1,7 @@
 const { nanoid } = require('nanoid');
+const ClientError = require('../../exceptions/ClientError ');
 const { Pool } = require('pg');
-const InvariantError = require('./exceptions/InvariantError');
+const InvariantError = require('../../exceptions/InvariantError');
 const NotFoundError = require('../exceptions/NotFoundError');
 const { mapSongDB } = require('../../utils');
 
